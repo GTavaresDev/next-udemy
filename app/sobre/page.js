@@ -9,7 +9,7 @@ const About = () => {
         <p>This is the about page.</p>
         <div>
           <h2>
-            <Link rel="stylesheet" href="/">
+            <Link href="/">
               Home
             </Link>
           </h2>
