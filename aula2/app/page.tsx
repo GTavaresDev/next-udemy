@@ -17,6 +17,7 @@ export default function Home() {
           <Link href="/posts">Posts</Link>
           <Link href="/params?parametro=FlamengoWinner">Parametros</Link>
           <Link href="/passagem">Passagem</Link>
+          <Link href="/produtos">Produtos</Link>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
         </div>
