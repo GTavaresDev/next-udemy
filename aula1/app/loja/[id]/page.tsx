@@ -9,7 +9,7 @@ type Props = {
 const Produtos = async ({ params }: Props) => {
   const { id } = await params;
   const productId = Number(id);
-  const product = products.find((p) => p.id === productId);
+  const product = products.find((p) => p.id === productId );
   if (!product) {
     return <div>Post not found</div>;
   }
