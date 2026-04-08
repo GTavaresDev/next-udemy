@@ -9,12 +9,13 @@ import { useSearchParams } from 'next/navigation'
 
 type Products = {
   id: number,
-  valor: number,
+  price: number,
   name: string
 }
 
 const products : Products[] = [
-  {id: 1, valor: 22, name:"Carregador"}
+  {id: 1, price: 22, name:"Carregador"},
+  {id:2, price: 15, name:"Bola de Futebol"}
 ]
 
 
@@ -30,8 +31,10 @@ const ProdutosPage = () => {
             <ul>
               {products.map((product) => (
                 <li key={product.id}>
-                    {product.name}
-                    {product.valor}
+                  <div className="flex flex-col map2">
+                    <Link href={`/produtos/${product.id}?name=${product.name}&price=${product.price}`}>{product.id}. {product.name} </Link>
+                  </div>
+                   
                 </li>
               ))}
             </ul>
